@@ -1,7 +1,11 @@
+import '../styles/MainHeader.css';
+
 function MainHeader() {
     return(
-        <>
-            <h1>4Patas</h1>
+        <>    
+            <div className="main-header">
+                <img src="/src/assets/MainLogo.png" alt="Logo 4 Patas" className="main-logo"/>
+            </div>
         </>
     )
 }

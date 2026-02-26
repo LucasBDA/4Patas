@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import "../styles/BodyHandler.css";
 import ScrollIndicator from "../components/ScrollIndicator";
+import ScrollBlur from "../components/ScrollBlur";
 
 interface BodyHandlerProps {
   sections: React.ComponentType[];
@@ -23,6 +24,7 @@ const BodyHandler = ({ sections }: BodyHandlerProps) => {
         totalSections={sections.length}
         containerRef={containerRef}
       />
+      <ScrollBlur containerRef={containerRef} />
     </div>
   );
 };

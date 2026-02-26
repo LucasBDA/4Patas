@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import '../styles/ScrollIndicator.css';
 
 interface ScrollIndicatorProps {
   totalSections: number;

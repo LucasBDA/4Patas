@@ -5,7 +5,7 @@ const Body_2 = () => {
         <>
             <div className='body-2'>
                 <h1>Teste</h1>
-            </div>
+            </div>             
         </>
     )
 }
