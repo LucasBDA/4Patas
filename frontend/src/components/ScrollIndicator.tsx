@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "../styles/ScrollIndicator.css";
 
 interface ScrollIndicatorProps {
   totalSections: number;
@@ -13,17 +14,20 @@ const ScrollIndicator = ({ totalSections, containerRef }: ScrollIndicatorProps) 
     if (!container) return;
 
     const handleScroll = () => {
-      const sectionHeight = container.clientHeight;
+      const sectionHeight = container.clientHeight || window.innerHeight;
       const currentIndex = Math.round(container.scrollTop / sectionHeight);
       setActiveIndex(currentIndex);
     };
+
+    // set initial index
+    handleScroll();
 
     container.addEventListener("scroll", handleScroll);
 
     return () => {
       container.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [containerRef]);
 
   const scrollToSection = (index: number) => {
     const container = containerRef.current;

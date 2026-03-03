@@ -1,7 +1,12 @@
+import MainLogo from "../assets/MainLogo.png";
+import '../styles/MainHeader.css';
+
 function MainHeader() {
     return(
         <>
-            <h1>4Patas</h1>
+            <div className="main-header">
+                <img src={MainLogo} alt="Main Logo" className="main-logo" aria-hidden />
+            </div>            
         </>
     )
 }

@@ -17,3 +17,87 @@
   width: 100%;
   scroll-snap-align: start;
 }
+
+/* Shared per-section animation elements */
+.body-section .section-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.body-section .bg-rect {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  z-index: 1;
+  background: linear-gradient(90deg, rgb(255, 120, 24) 0%, rgba(255, 94, 0, 0.521) 50%, rgba(255, 136, 0, 0.308) 80%, rgba(255, 178, 71, 0) 100%);
+  transition: width 0.9s cubic-bezier(.2,.9,.2,1);
+}
+
+.body-section .text {
+  position: relative;
+  z-index: 2;
+  color: #111;
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.5s ease 0.25s, transform 0.5s ease 0.25s;
+  text-align: left;
+  align-self: flex-start;
+  font-family: Roboto, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  margin-left: 50px;
+  padding-top: 80px;
+}
+
+.body-section .text h1 {
+  font-size: 100px;
+  z-index: 3;
+}
+
+.body-section .text p {
+  max-width: 720px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+  font-size: 30px;
+  margin-top: 15%;
+}
+
+.body-section .white-rect {
+  position: relative;
+  z-index: 2;
+  width: 240px;
+  height: 0;
+  background: #ffffff;
+  margin-top: 18px;
+  margin-left: 50px;
+  overflow: hidden;
+  transition: height 0.45s ease 0.6s;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
+.body-section.in-view .bg-rect {
+  width: 75%;
+}
+
+.body-section.in-view .text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.body-section.in-view .white-rect {
+  height: 8px;
+}

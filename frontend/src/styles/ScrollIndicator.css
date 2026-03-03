@@ -1,8 +1,8 @@
 .scroll-indicator {
   position: fixed;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+  left: 60px;
+  bottom: 120px;
+  transform: none;
   display: flex;
   flex-direction: column;
   gap: 12px;

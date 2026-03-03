@@ -1,0 +1,57 @@
+.body2{
+  background-image: url("../assets/CatBG_1.jpg");
+  background-size: cover;
+  background-position: 100% 80%;
+  height: 100vh;
+}
+
+.catFloat{
+  position: absolute;
+  left: 500px;
+  bottom: 380px;
+  width: 200px;
+  height: 200px;
+  opacity: 0;
+  transition: opacity 4s ease;
+  z-index: 3;
+  pointer-events: none;
+}
+
+:global(.body-section.in-view) .catFloat{
+  opacity: 1;
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+.catImage{
+  width: 200px;
+  height: 200px;
+  display: block;
+  transform-origin: center;
+  animation: tilt 2s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50px); }
+}
+
+@keyframes tilt {
+  from { transform: rotate(-18deg); }
+  to   { transform: rotate(0deg); }
+}
+
+.floatingOutlines{
+  position: absolute;
+  pointer-events: none;
+  z-index: 5;
+  width: 60%;
+  height: 100%;
+}
+
+.outline1{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: -90px;
+  border: 5px solid rgb(255, 255, 255);
+}
