@@ -9,11 +9,11 @@ const Body_1 = () => {
         <div className="text">
           <h1>Care Comes First</h1>
           <p>
-            At Quatro Patas, every interaction is built around responsible pet ownership.<br />
+            At Quatro Patas, every interaction is built around responsible pet ownership.<br/>
             We promote safe environments, verified profiles, and partnerships with trusted
             veterinary clinics to ensure that every adoption or transaction prioritizes the
             health and happiness of animals.
-          </p>
+          </p>          
         </div>
 
         <div className="white-rect" aria-hidden />

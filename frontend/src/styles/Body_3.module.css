@@ -1,7 +1,7 @@
-.body2{
-  background-image: url("../assets/CatBG_1.jpg");
+.body3{
+  background-image: url("../assets/DogAndCatBG.jpg");
   background-size: cover;
-  background-position: 100% 80%;
+  background-position: 0 80%;
   height: 100vh;
 }
 
@@ -22,7 +22,7 @@
   animation: float 4s ease-in-out infinite alternate;
 }
 
-.catImage{
+.DogWalking{
   width: 200px;
   height: 200px;
   display: block;
@@ -36,8 +36,8 @@
 }
 
 @keyframes tilt {
-  from { transform: rotate(-18deg); }
-  to   { transform: rotate(0deg); }
+  from { transform: rotate(-8deg); }
+  to   { transform: rotate(10deg); }
 }
 
 .floatingOutlines{
@@ -52,6 +52,7 @@
   position: absolute;
   width: 150px;
   height: 150px;
-  left: -120px;
+  left: -80px;
   border: 5px solid rgb(255, 255, 255);
+  border-radius: 50%;
 }

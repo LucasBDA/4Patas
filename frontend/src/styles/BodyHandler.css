@@ -76,6 +76,23 @@
   margin-top: 15%;
 }
 
+.body-section .text b {
+  font-size: 24px;
+  color: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.24);
+  padding: 8px 16px;
+  border-radius: 8px;
+  width: fit-content;
+  margin-top: 80px;
+  transition: all .5s ease;
+}
+
+.body-section .text b:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(255, 120, 24);
+  cursor: pointer;  
+}
+
 .body-section .white-rect {
   position: relative;
   z-index: 2;

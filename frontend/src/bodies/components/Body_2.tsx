@@ -14,11 +14,13 @@ const Body_2 = () => {
             of a loving home. Through a structured and transparent process,
             we ensure every adoption is safe, ethical, and focused on long-term
             commitment.
-          </p>
+          </p>          
         </div>
 
         <div className="white-rect" aria-hidden />
-
+        <div className="text">
+            <b>See more</b>
+        </div>
         <div className={styles.catFloat}>
           <img src={CatIcon} alt="Cat Icon" className={styles.catImage} aria-hidden />
         </div>
